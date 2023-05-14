@@ -15,12 +15,22 @@ body {
     justify-content: space-between;
 } */
 
+nav ul {
+    padding: 0px;
+}
+
+nav ul li{
+    display: inline;
+    padding-right: 20px;
+}
+
 a {
     color: var(--green);
     font-size: 1.5rem;
+    text-decoration: none;
 }
 
-.card {
+#page-card {
     font-size: 2rem;
     width: 16rem;
     background-color: var(--green);
@@ -31,4 +41,26 @@ a {
 .container-fluid {
     background-color: var(--green);
     color: var(--purple);
+}
+
+#post-card {
+    font-size: 1rem;
+    background-color: var(--green);
+    color: var(--purple);
+    /* border: var(--purple); */
+    /* font-weight: bold; */
+}
+
+#pc-title {
+    font-size: 2rem;
+    background-color: var(--purple);
+    color: var(--green);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span {
+    font-size: 1rem;
 }
