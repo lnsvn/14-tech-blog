@@ -6,6 +6,7 @@
 body {
     background-color: var(--purple);
     color: var(--green);
+    font-family: 'Raleway', sans-serif;
 }
 
 /* nav {
@@ -24,7 +25,7 @@ nav ul li{
     padding-right: 20px;
 }
 
-a {
+nav ul li a {
     color: var(--green);
     font-size: 1.5rem;
     text-decoration: none;
@@ -32,13 +33,14 @@ a {
 
 #page-card {
     font-size: 2rem;
-    width: 16rem;
+    width: 18rem;
     background-color: var(--green);
     color: var(--purple);
     font-weight: bold;
 }
 
-.container-fluid {
+.container-fluid,
+.container {
     background-color: var(--green);
     color: var(--purple);
 }
@@ -63,4 +65,19 @@ a {
 
 span {
     font-size: 1rem;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+.login-btn {
+    background-color: var(--purple);
+    color: var(--green);
+}
+
+.sign-up-link{
+    font-size: 1.3rem;
+    color: var(--purple);
+    text-decoration: none;
 }
