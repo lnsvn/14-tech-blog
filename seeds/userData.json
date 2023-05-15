@@ -1,14 +1,17 @@
 [
     {
-      "user_name": "ChildishMothman",
+      "id": 1,
+      "username": "ChildishMothman",
       "password": "password123"
     },
     {
-      "user_name": "StormySpinach",
+      "id": 2,
+      "username": "StormySpinach",
       "password": "Password123"
     },
     {
-      "user_name": "QuietBuzzing",
+      "id": 3,
+      "username": "QuietBuzzing",
       "password": "password12345"
     }
 ]
