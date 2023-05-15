@@ -38,6 +38,19 @@ router.get('/login', async (req,res) => {
     }
 })
 
+router.get('/sign-up', async (req,res) => {
+    try {
+        if (req.session.logged_in) {
+            res.redirect('/dashboard');
+            return;
+        }
+        res.render("sign-up")
+    } catch {
+        res.status(500).json(err);
+        console.log(err);
+    }
+})
+
 router.get('/dashboard', withAuth, async (req,res) => {
     try {
         res.render("dashboard", { logged_in: req.session.logged_in });

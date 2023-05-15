@@ -20,11 +20,10 @@ const loginFormHandler = async (event) => {
       alert('Failed to log in');
       console.log(err);
     }
-  } else {
-    console.log(err);
-  }
+  } 
   document.location.reload();
 };
+
 
 document
   .querySelector('.login-form')

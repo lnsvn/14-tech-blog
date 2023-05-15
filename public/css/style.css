@@ -71,12 +71,14 @@ label {
     font-size: 1.3rem;
 }
 
-.login-btn {
+.login-btn,
+.signup-btn {
     background-color: var(--purple);
     color: var(--green);
 }
 
-.sign-up-link{
+.sign-up-link,
+.login-link {
     font-size: 1.3rem;
     color: var(--purple);
     text-decoration: none;
