@@ -22,6 +22,7 @@ const loginFormHandler = async (event) => {
     }
   } 
   document.location.reload();
+  
 };
 
 
