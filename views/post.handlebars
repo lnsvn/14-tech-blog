@@ -13,19 +13,19 @@
 
     <div class="card-body">
 
-      <form class="form login-form">
+      <form class="form post-form">
         <div class="form-group">
-          <label for="username-login">Title</label>
-          <input type="text" class="form-control" id="username-login" placeholder="Enter post title">
+          <label for="post-title">Title</label>
+          <input type="text" class="form-control" id="post-title" placeholder="Enter post title">
         </div>
         </br>
         <div class="form-group">
-          <label for="password-login">Content</label>
-          <textarea type="password" class="form-control" rows="5" id="password-login" placeholder="Enter post content"></textarea>
+          <label for="post-content">Content</label>
+          <textarea type="text" class="form-control" rows="5" id="post-content" placeholder="Enter post content"></textarea>
         </div>
         </br></br>
         <button type="submit" class="btn login-btn btn-lg">Create</button>
-        <a href="/dashboard" type="button" class="btn login-btn btn-lg">Cancel</a>
+        <a href="/dashboard" type="button" class="btn create-btn btn-lg">Cancel</a>
         </br>
       </form>
 
@@ -33,3 +33,5 @@
 
   </div>
 </div>
+
+<script src="/js/post.js"></script>
