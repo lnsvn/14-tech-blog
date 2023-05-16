@@ -32,12 +32,12 @@ nav ul li a {
     font-weight: bold;
 }
 
-.container-fluid {
+.green-container {
     background-color: var(--green);
     color: var(--purple);
 }
 
-.container {
+.purple-container {
     background-color: var(--purple);
     color: var(--green);
 }
@@ -76,16 +76,18 @@ label {
 }
 
 .login-btn,
-.signup-btn {
+.signup-btn,
+.newpost-btn {
     background-color: var(--purple);
     color: var(--green);
+    font-size: 1.3rem;
 }
 
-.newpost-btn {
+/* .newpost-btn {
     background-color: var(--green);
     color: var(--purple);
     font-size: 2rem;
-}
+} */
 
 .sign-up-link,
 .login-link {
@@ -93,4 +95,3 @@ label {
     color: var(--purple);
     text-decoration: none;
 }
-
