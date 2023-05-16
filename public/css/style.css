@@ -9,13 +9,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-/* nav {
-    width: 25%; 
-    max-width: 500px;
-    display: flex;
-    justify-content: space-between;
-} */
-
 nav ul {
     padding: 0px;
 }
@@ -39,21 +32,24 @@ nav ul li a {
     font-weight: bold;
 }
 
-.container-fluid,
-.container {
+.container-fluid {
     background-color: var(--green);
     color: var(--purple);
+}
+
+.container {
+    background-color: var(--purple);
+    color: var(--green);
 }
 
 #post-card {
     font-size: 1rem;
     background-color: var(--green);
     color: var(--purple);
-    /* border: var(--purple); */
-    /* font-weight: bold; */
 }
 
-#pc-title {
+#pc-title,
+#db-title {
     font-size: 2rem;
     background-color: var(--purple);
     color: var(--green);
@@ -61,6 +57,14 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#dashboard-card {
+    font-size: 2rem;
+    background-color: var(--purple);
+    color: var(--green);
+    font-weight: bold;
+    display: flex;
 }
 
 span {
@@ -77,9 +81,16 @@ label {
     color: var(--green);
 }
 
+.newpost-btn {
+    background-color: var(--green);
+    color: var(--purple);
+    font-size: 2rem;
+}
+
 .sign-up-link,
 .login-link {
     font-size: 1.3rem;
     color: var(--purple);
     text-decoration: none;
 }
+
