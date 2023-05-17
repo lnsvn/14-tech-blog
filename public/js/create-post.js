@@ -18,10 +18,11 @@ const postFormHandler = async (event) => {
             alert('Failed to create post');
             console.log(err);
         }
+    } else {
+        alert('Your post needs both a title and content')
     }
 
 };
-
 
 document
     .querySelector('.post-form')
