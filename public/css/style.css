@@ -1,6 +1,6 @@
 :root {
     --purple: #3b1a51;
-    --green: #b5decb;
+    --green: #c6e6d8;
 }
 
 body {
@@ -13,7 +13,7 @@ nav ul {
     padding: 0px;
 }
 
-nav ul li{
+nav ul li {
     display: inline;
     padding-right: 20px;
 }
@@ -83,15 +83,17 @@ label {
     font-size: 1.3rem;
 }
 
-/* .newpost-btn {
-    background-color: var(--green);
-    color: var(--purple);
-    font-size: 2rem;
-} */
-
 .sign-up-link,
 .login-link {
     font-size: 1.3rem;
     color: var(--purple);
     text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden-el {
+    display: none;
 }

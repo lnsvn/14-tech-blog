@@ -17,12 +17,14 @@
     {{#if logged_in}}
       {{#if posts.length}}
         {{#each posts as |post|}}
-        <div id="dashboard-card" class="card m-4 border-4">
-          <div id="db-title" class="card-title px-3">
-            {{post.title}} 
-            <span>{{format_date post.date_created}}</span>
-          </div>
-        </div>
+          <a href="/update-post/{{post.id}}">
+            <div id="dashboard-card" class="card m-4 border-4">
+              <div id="db-title" class="card-title px-3">
+                {{post.title}}
+                <span>{{format_date post.date_created}}</span>
+              </div>
+            </div>
+          </a>
         {{/each}}
       {{/if}}
     {{/if}}

@@ -8,23 +8,24 @@
   <div id="post-card" class="card m-4 border-4">
 
     <div id="pc-title" class="card-title px-3">
-      Create New Post
+      Update Post
     </div>
 
     <div class="card-body">
 
-      <form class="form post-form">
+      <form class="form update-post-form">
         <div class="form-group">
           <label for="post-title">Title</label>
-          <input type="text" class="form-control" id="post-title" placeholder="Enter post title">
+          <textarea type="text" class="form-control" rows="1" id="post-title">{{title}}</textarea>
         </div>
         </br>
         <div class="form-group">
           <label for="post-content">Content</label>
-          <textarea type="text" class="form-control" rows="5" id="post-content" placeholder="Enter post content"></textarea>
+          <textarea type="text" class="form-control" rows="5" id="post-content">{{content}}</textarea>
         </div>
         </br></br>
-        <button type="submit" class="btn login-btn btn-lg">Create</button>
+        <button type="button" class="btn login-btn update-btn btn-lg">Update</button>
+        <button type="button" class="btn login-btn delete-btn btn-lg">Delete</button>
         <a href="/dashboard" type="button" class="btn create-btn btn-lg">Cancel</a>
         </br>
       </form>
@@ -34,4 +35,4 @@
   </div>
 </div>
 
-<script src="/js/post.js"></script>
+<script src="/js/update-post.js"></script>
