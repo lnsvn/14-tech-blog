@@ -97,3 +97,9 @@ a {
 .hidden-el {
     display: none;
 }
+
+#comment-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
