@@ -112,7 +112,7 @@ router.get('/update-post/:id', async (req, res) => {
     }
 })
 
-router.get('/comment/:id', withAuth, async (req, res) => {
+router.get('/comments/:id', withAuth, async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id, {
             include: [
@@ -139,6 +139,29 @@ router.get('/comment/:id', withAuth, async (req, res) => {
             logged_in: req.session.logged_in
         });
     } catch (err) {
+        res.status(500).json(err);
+        console.log(err);
+    }
+})
+
+router.get('/add-comment/:id', async (req, res) => {
+    try {
+        const postData = await Post.findByPk(req.params.id, {
+            include: [
+                {
+                    model: User,
+                    attributes: ['id', 'username'],
+                },
+            ],
+        });
+
+        const post = postData.get({ plain: true });
+
+        res.render("add-comment", {
+            ...post,
+            logged_in: req.session.logged_in,
+        });
+    } catch (err){
         res.status(500).json(err);
         console.log(err);
     }
