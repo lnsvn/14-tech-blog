@@ -10,7 +10,7 @@
 Tech Blog is a CMS-style blog site, where developers can publish blog posts and comment on other developers’ posts.
 
 <h3 align="center">
-    <a href="">
+    <a href="https://limitless-bastion-04221.herokuapp.com/">
     Deployed Application
     </a>
 </h3>
